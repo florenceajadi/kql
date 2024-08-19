@@ -1,13 +1,14 @@
-# kql
-
+<h4>Log Analytics Workspace</h4>
+<p>I am running a Windows Security Event in my workspace to collect, analyze query log data from various sources. I'm able to gain insight into my cloud and on-premises environments.</p>
 
 <p>
-<img src="https://github.com/user-attachments/assets/3dbb75b6-d80e-4763-bf47-3ad040a3e40c" height="80%" width="80%" />
-<img src="https://github.com/user-attachments/assets/37d52965-ad66-486f-8cf4-4f42fb3ebad6" height="80%" width="80%" />
+<img src="https://github.com/user-attachments/assets/2f4fea15-1830-496d-bcf2-e331f907cdf6" height="80%" width="80%" />
+<img src="ttps://github.com/user-attachments/assets/89443fd9-b104-4425-9cc4-67aafda5f0d4" height="80%" width="80%" />
 </p>
 <p>
-  I was able to run a SecurityEvent in the last 12Hrs on the log which was able to generate  and show the whole table of the Security Logs.
-</p>
+  <h6> I was able to run a SecurityEvent in the last 30mins on event ID '4688' on the Remote Desktop and Server Msg Block in the last 30mins, which generated 96 failed authentications.
+ SecurityEvent captures and stores security-related logs, such as logins and authentication attempts. It's used to monitor and analyze security activities and helping detect 
+  potential threats.</h6> SMB is used for sharing files, printers, and other resources between computers on a network.
 <br />
 <p>
 <img src="https://github.com/user-attachments/assets/d5582412-40ce-4272-af4e-bdce8879a49b" height="80%" width="80%" />
