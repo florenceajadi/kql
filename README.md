@@ -11,15 +11,19 @@
   potential threats.</h6> SMB is used for sharing files, printers, and other resources between computers on a network.
 <br />
 <p>
-<img src="https://github.com/user-attachments/assets/d5582412-40ce-4272-af4e-bdce8879a49b" height="80%" width="80%" />
+<img src="https://github.com/user-attachments/assets/6ad40ccc-11e1-4b54-b3d8-d194bb6f0434" height="80%" width="80%" />
 </p>
 <p>
-  I then used | where EventID == 4625 is to see failed Logins.
+Detecting a brute-force attack attempt by failed login events (EventID '4625') in the last 60mins. As you can see, I grouped the failures by source IP address and counts the number 
+  of the failed attempt. If any IP address has more than 10 failed login attempts within 60mins, it's now flagged as a brute-force attack.
   <p>
-<img src="https://github.com/user-attachments/assets/0bd6cce9-0e63-4517-a135-c690d973ab89" height="80%" width="80%" />
+<img src="https://github.com/user-attachments/assets/09bc6d1d-8f25-4638-9054-9845c262386e" height="80%" width="80%" />
+    <img src="https://github.com/user-attachments/assets/ccfaa535-5777-45a0-a772-9e4a4ef7dfc1" height="80%" width="80%" />
 </p>
 <p>
- Using '\\ADMINISTRATOR' to search for Account whose EventID == 4625. 
+There are other ways you can troubleshoot this and getting the same results. Using EventID '4625' to filter the SecurityEvent logs for failed login attempts in the last 60mins. 
+  Using LogonType3 to focus on network logons like RDP and SMB. Summarizing the IP Address and counting the number of failed attempts by each IP Address and destination host.
+  Any IP Address with over 5 login attempts is a potential brute-force attack.
 </p>
 <br />
  <p>
