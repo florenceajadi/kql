@@ -27,29 +27,12 @@ There are other ways you can troubleshoot this and getting the same results. Usi
 </p>
 <br />
  <p>
-<img src="https://github.com/user-attachments/assets/13d3a244-f51f-42ed-b790-8fc913846646" height="80%" width="80%" />
+<img src="https://github.com/user-attachments/assets/1ece3198-752c-43f8-abb9-0a59091e794a" height="80%" width="80%" />
+   <img src="https://github.com/user-attachments/assets/81734efd-eb22-4506-a73a-55a73d158945" height="80%" width="80%" />
+
 </p>
 <p>
- Using TimeGenerated to see the last failed Login 12Hrs ago.
+I wanted to detect Malware on Microsoft Window's EventLog either on the ID '1151' or '1150', which detects scanning or malware events on the Windows Defender actions. Since the
+  Eventlevel is a 4, it's nothing too concerning, it means information. Which provides informational msgs about system or application operations.
 </p>
 <br />
- <p>
-<img src="https://github.com/user-attachments/assets/b8d93616-e2ec-4acd-80b3-4c6a21123cc0" height="80%" width="80%" />
-</p>
-<p>
-Using Count to count how many failed Login came from the account and ID.
-</p>
-<br />
-<p>
-  <img src="https://github.com/user-attachments/assets/d998b87f-b5a2-4eab-a4db-753359bf3d13" height="80%" width="80%" />
-</p>
-<p>
-  Decided to change the EventID to 4688, TimeGenerated 2hrs ago to see how many failureCounts occured.
-</p>
-<br />
-<p>
-  <img src="https://github.com/user-attachments/assets/35935af5-1aa5-404a-9ce5-29c74885d86a" height="80%" width="80%" />
-</p>
-<p>
-  Changed the name and was able to name it as AttackerIP, Cat, and Dog. 
-</p>
